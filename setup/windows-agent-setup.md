@@ -1,7 +1,7 @@
 # Windows Agent Setup
 
 ## Step 1: Add Agent in Wazuh Dashboard
-* Go to **Agents**
+- Go to **Agents**
 - Click **Add Agent**
 - Select **Windows**
 - Enter Wazuh server IP
