@@ -13,7 +13,7 @@ Registers a new Windows agent in Wazuh.
 ## Step 2: Download Wazuh Agent
 Download the Windows agent (.msi) from the Wazuh dashboard.
 Downloads the agent installer for Windows.
-
+<pre>https://packages.wazuh.com/4.x/windows/wazuh-agent-4.7.0-1.msi</pre>
 (Add screenshot: download option)
 
 ## Step 3: Install Agent on Windows
