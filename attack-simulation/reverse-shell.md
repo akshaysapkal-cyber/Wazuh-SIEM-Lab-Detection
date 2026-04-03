@@ -53,6 +53,9 @@ Provides remote access to the target system.
 
 ![meterpreter](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/attack/meterpreter.png?raw=true)
 
+Detection:
+- [reverse-shell detection](detection/reverse-shell-detection.md)
+
 ## What Happened
 - A malicious payload was created and delivered to the target system.
 - The target executed the file, establishing a reverse connection.
