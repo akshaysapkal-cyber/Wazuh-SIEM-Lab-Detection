@@ -11,7 +11,7 @@ After executing the payload on the Windows machine, a connection was established
 - Go to **Security Events / Discover**
 - Look for events related to PowerShell, unusual processes, or outbound connections
 
-(Add screenshot: alerts showing suspicious activity)
+![reverseshell](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/detection/Reverse%20Shell.png?raw=true)
 
 ## What I Observed
 - A new process was executed on the Windows system
