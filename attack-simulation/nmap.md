@@ -14,6 +14,9 @@ Performs a TCP SYN scan on the target machine (Windows).
 ## Step 2: View Scan Results
 The output shows open ports and services available on the target system.
 
+Detection:
+- [nmap detection](detection/nmap-detection.md)
+
 ## What Happened
 - The attacker scanned the target system to gather information.
 - Open ports indicate available services that can be targeted.
