@@ -5,7 +5,7 @@
 ``` sudo apt upgrade ```
 Updates system packages to the latest version.
 ## Step 2: Download Wazuh Installation Script
-``` curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh ```
+<pre> curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh </pre>
 Downloads the official Wazuh installation script.
 
 ![download wazuh with curl](https://github.com/akshaysapkal-cyber/Wazuh-SOC-Lab-Detection/blob/main/Screenshots/Installation/curl%20download%20wazuh.png?raw=true)
