@@ -8,8 +8,8 @@ After executing the payload on the Windows machine, a connection was established
 
 ## Where to Check
 - Open Wazuh Dashboard
-- Go to **Security Events / Discover**
-- Look for events related to PowerShell, unusual processes, or outbound connections
+- Go to **Security Events / Dashboard**
+- Look for events related to reverse shell, unusual processes, or outbound connections
 
 ![reverseshell](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/detection/Reverse%20Shell.png?raw=true)
 
