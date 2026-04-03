@@ -31,9 +31,9 @@ The following attacks were performed:
 3. Reverse Shell (Remote Access)
 
 Detailed steps:
-- attack-simulation/nmap.md
-- attack-simulation/brute-force.md
-- attack-simulation/reverse-shell.md
+- [nmap](attack-simulation/nmap.md)
+- [bruteforce](attack-simulation/brute-force.md)
+- [reverse shell](attack-simulation/reverse-shell.md)
 
 ## Detection & Analysis
 Wazuh was used to monitor logs and detect suspicious activity.
@@ -43,12 +43,12 @@ Example:
 - Security alerts generated in dashboard
 
 Detailed analysis:
-- detection/nmap-detection.md
-- detection/brute-force-detection.md
-- detection/reverse-shell-detection.md
+- [nmap detection](detection/nmap-detection.md)
+- [bruteforce detection](detection/brute-force-detection.md)
+- [reverse-shell detection](detection/reverse-shell-detection.md)
 
 ## Screenshots
-All screenshots are available in the screenshots/ folder and inside respective documentation files.
+All screenshots are available in the [](screenshots/) folder and inside respective documentation files.
 
 ## 🎯 Key Learning
 - Understanding how SIEM detects attacks
