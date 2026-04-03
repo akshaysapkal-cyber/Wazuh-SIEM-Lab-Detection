@@ -13,7 +13,9 @@ Downloads the official Wazuh installation script.
 ![download wazuh with curl](https://github.com/akshaysapkal-cyber/Wazuh-SOC-Lab-Detection/blob/main/Screenshots/Installation/curl%20download%20wazuh.png?raw=true)
 
 ## Step 3: Install Wazuh
-``` sudo bash wazuh-install.sh -a ```
+``` 
+sudo bash wazuh-install.sh -a
+```
 
 Installs Wazuh manager, indexer, and dashboard.
 Wazuh services start automatically after installation.
