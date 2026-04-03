@@ -15,6 +15,7 @@ Downloads the official Wazuh installation script.
 ## Step 3: Install Wazuh
 ``` sudo bash wazuh-install.sh -a ```
 Installs Wazuh manager, indexer, and dashboard.
+Wazuh services start automatically after installation.
 
 ## Step 4: Get Login Credentials
 After installation, credentials will be displayed in the terminal.
