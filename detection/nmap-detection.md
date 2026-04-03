@@ -9,10 +9,10 @@
 
 ## Where to Find It
 - Open Wazuh Dashboard
-- Navigate to **Security Events / Discover**
+- Navigate to **Security Events / Dashboard**
 - Search using keywords like: `scan`, `nmap`, or filter by source IP
 
-(Add screenshot: Wazuh alerts showing scan activity)
+![nmapdetect](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/detection/Nmap%20scan%20detect.png?raw=true)
 
 ## Key Observation
 - The attacker machine sent multiple requests to different ports in a short time.
