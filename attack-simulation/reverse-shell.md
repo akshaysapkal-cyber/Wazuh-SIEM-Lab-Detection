@@ -30,7 +30,8 @@ Prepares listener to receive reverse connection.
 
 ## Step 4: Download and Execute Payload on Windows
 Open browser on Windows and visit:
-http://<Kali-IP>
+`http://<Kali-IP>/`
+
 Download and run the `shell.exe` on the windows system.
 Executes the reverse shell payload and initiates connection.
 
