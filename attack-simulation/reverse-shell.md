@@ -36,7 +36,7 @@ Executes the reverse shell payload and initiates connection.
 
 (Add screenshot: download + execution)
 
-## Step 6: Gain Access on Kali
+## Step 5: Gain Access on Kali
 Once payload executed in target machine, a Meterpreter session is opened.
 Provides remote access to the target system.
 
