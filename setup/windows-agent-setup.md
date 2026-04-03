@@ -1,45 +1,39 @@
-# Windows Agent Setup
+# Wazuh Windows Agent Setup
 
 ## Step 1: Add Agent in Wazuh Dashboard
-- Go to **Agents**
-- Click **Add Agent**
-- Select **Windows**
-- Enter Wazuh server IP
+1. Open the Wazuh Dashboard.
+2. Navigate to **Agents**.
+3. Click on **Add Agent**.
+4. Select **Windows**.
+5. Fill in the required details:
+   - Wazuh Server Address (IP or hostname)
+   - Agent Name
+   - Optional settings if required
+6. Once all the details are filled, there is no separate Save button.  
+  
+After adding the details, the dashboard will generate:
+- An installation command (Invoke-WebRequest)
+- A command to start the agent service
 
-Registers a new Windows agent in Wazuh.
+![wazuh](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/wazuh/Wazuh%20Agent%20config.png?raw=true)
 
-(Add screenshot: agent creation screen)
+## Step 2: Install Wazuh Agent Using Generated Command
+1. Copy the installation command provided in the dashboard.
+2. Open **PowerShell as Administrator** on the target Windows system.
+3. Paste and execute the command.
 
-## Step 2: Download Wazuh Agent
-Download the Windows agent (.msi) from the Wazuh dashboard.
-Downloads the agent installer for Windows.
-<pre>https://packages.wazuh.com/4.x/windows/wazuh-agent-4.7.0-1.msi</pre>
-(Add screenshot: download option)
+This command will:
+- Download the Wazuh agent (.msi)
+- Install the agent
+- Automatically configure it with the provided server details
 
-## Step 3: Install Agent on Windows
-- Run the downloaded .msi file
-- Enter Wazuh server IP when prompted
-- Complete installation
+![invoke](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/wazuh/Wazuh%20invoke.png?raw=true)
 
-Installs Wazuh agent on the target system.
+## Step 3: Start the Wazuh Agent Service
 
-(Add screenshot: installation process)
+After installation, run the following command in PowerShell:
 
-## Step 4: Start Agent Service
-```bash
-net start wazuh
+```powershell
+NET START Wazuh Svc  
 ```
-Starts the Wazuh agent service on Windows.
-
-(Add screenshot: service started)
-
-## Step 5: Verify Agent Connection
-
-- Go back to Wazuh dashboard
-- Check agent status → Active
-
-Confirms the agent is successfully connected.
-
-(Add screenshot: agent active status)
-
----
+![net start](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/wazuh/wazuh%20net%20start.png?raw=true)
