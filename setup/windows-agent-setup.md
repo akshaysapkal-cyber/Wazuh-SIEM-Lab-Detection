@@ -26,7 +26,7 @@ Installs Wazuh agent on the target system.
 (Add screenshot: installation process)
 
 ## Step 4: Start Agent Service
-```
+```bash
 net start wazuh
 ```
 Starts the Wazuh agent service on Windows.
