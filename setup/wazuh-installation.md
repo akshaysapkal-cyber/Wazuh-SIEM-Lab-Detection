@@ -1,19 +1,25 @@
 # Wazuh Installation (Ubuntu)
 
 ## Step 1: Update System
-``` sudo apt update ``` 
-``` sudo apt upgrade ```
+```bash
+sudo apt update
+``` 
+```bash
+sudo apt upgrade
+```
 
 Updates system packages to the latest version.
 ## Step 2: Download Wazuh Installation Script
-``` curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh ```
+```bash 
+curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
+```
 
 Downloads the official Wazuh installation script.
 
 ![download wazuh with curl](https://github.com/akshaysapkal-cyber/Wazuh-SOC-Lab-Detection/blob/main/Screenshots/Installation/curl%20download%20wazuh.png?raw=true)
 
 ## Step 3: Install Wazuh
-``` 
+```bash
 sudo bash wazuh-install.sh -a
 ```
 
@@ -29,7 +35,7 @@ Saves the username and password for dashboard login.
 
 ## Step 5: Access Wazuh Dashboard
 Open browser and visit:
-```
+```bash
 https://<Ubuntu-IP>
 ```
 Opens the Wazuh web interface.
