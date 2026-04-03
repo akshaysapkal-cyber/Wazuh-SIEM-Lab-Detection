@@ -31,9 +31,9 @@ The following attacks were performed:
 3. Reverse Shell (Remote Access)
 
 Detailed steps:
-- [nmap](attack-simulation/nmap.md)
-- [bruteforce](attack-simulation/brute-force.md)
-- [reverse shell](attack-simulation/reverse-shell.md)
+- [nmap attack](attack-simulation/nmap.md)
+- [bruteforce attack](attack-simulation/brute-force.md)
+- [reverse shell attack](attack-simulation/reverse-shell.md)
 
 ## Detection & Analysis
 Wazuh was used to monitor logs and detect suspicious activity.
