@@ -8,10 +8,10 @@ During the attack, several failed login attempts were generated on the Windows m
 
 ## Where to Check
 - Open Wazuh Dashboard
-- Go to **Security Events / Discover**
+- Go to **Security Events / Dashboard**
 - Search for terms like `failed login` or filter using the attacker IP
 
-(Add screenshot: failed login alerts)
+![bruteforcedetect](https://github.com/akshaysapkal-cyber/Wazuh-SIEM-Lab-Detection/blob/main/Screenshots/detection/bruteforcedetect.png?raw=true)
 
 ## What I Observed
 - Multiple login failures occurred within a short time
