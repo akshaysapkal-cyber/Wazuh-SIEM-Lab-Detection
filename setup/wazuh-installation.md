@@ -3,6 +3,7 @@
 ## Step 1: Update System
 ``` sudo apt update ``` 
 ``` sudo apt upgrade ```
+
 Updates system packages to the latest version.
 ## Step 2: Download Wazuh Installation Script
 ``` curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh ```
