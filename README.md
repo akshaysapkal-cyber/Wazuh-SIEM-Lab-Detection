@@ -49,7 +49,7 @@ Detailed analysis:
 - [reverse-shell detection](detection/reverse-shell-detection.md) Suspicious command execution and unusual outbound connections were detected, indicating possible reverse shell activity
 
 ## Screenshots
-All screenshots are available in the [SS](screenshots/) folder and inside respective documentation files.
+All screenshots are available in the [Screenshots](Screenshots/) folder and inside respective documentation files.
 
 ## 🎯 Key Learning
 - Understanding how SIEM detects attacks
