@@ -31,21 +31,22 @@ The following attacks were performed:
 3. Reverse Shell (Remote Access)
 
 Detailed steps:
-- [nmap attack](attack-simulation/nmap.md)
-- [bruteforce attack](attack-simulation/brute-force.md)
-- [reverse shell attack](attack-simulation/reverse-shell.md)
+- [nmap attack](attack-simulation/nmap.md) Performed network scanning using nmap to identify open ports and services
+- [bruteforce attack](attack-simulation/brute-force.md) Multiple login attempts using Hydra tool
+- [reverse shell attack](attack-simulation/reverse-shell.md) Established unauthorized remote access from target system using Metasploit Framework
 
 ## Detection & Analysis
 Wazuh was used to monitor logs and detect suspicious activity.
 
 Example:
-- Failed login attempts detected
-- Security alerts generated in dashboard
+- Multiple Failed login attempts detected
+- Security alerts were triggered on the Wazuh dashboard
+- Suspicious command execution activity was logged
 
 Detailed analysis:
-- [nmap detection](detection/nmap-detection.md)
-- [bruteforce detection](detection/brute-force-detection.md)
-- [reverse-shell detection](detection/reverse-shell-detection.md)
+- [nmap detection](detection/nmap-detection.md) Port scanning activity was detected through multiple connection attempts across different ports, indicating reconnaissance behavior
+- [bruteforce detection](detection/brute-force-detection.md) Multiple failed authentication attempts were detected, indicating a potential brute-force attack
+- [reverse-shell detection](detection/reverse-shell-detection.md) Suspicious command execution and unusual outbound connections were detected, indicating possible reverse shell activity
 
 ## Screenshots
 All screenshots are available in the [](screenshots/) folder and inside respective documentation files.
