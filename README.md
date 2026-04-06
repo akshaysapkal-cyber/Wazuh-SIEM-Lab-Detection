@@ -20,8 +20,8 @@ The goal is to perform attacks and analyze how Wazuh detects them.
 
 Detailed setup steps are available here:
 
-- [wazuh installation](setup/wazuh-installation.md)
-- [agent setup](setup/windows-agent-setup.md)
+- [wazuh installation](setup/wazuh-installation.md) Step-by-step guide to install and configure the Wazuh server on Ubuntu
+- [agent setup](setup/windows-agent-setup.md) Instructions to install and connect the Wazuh agent on the Windows target system.
 
 ## Attack Simulation
 The following attacks were performed:
