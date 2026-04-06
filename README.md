@@ -32,7 +32,7 @@ The following attacks were performed:
 
 Detailed steps:
 - [nmap attack](attack-simulation/nmap.md) Performed network scanning using nmap to identify open ports and services
-- [bruteforce attack](attack-simulation/brute-force.md) Multiple login attempts using Hydra tool
+- [bruteforce attack](attack-simulation/brute-force.md) Multiple login attempts using Hydra tool against the RDP
 - [reverse shell attack](attack-simulation/reverse-shell.md) Established unauthorized remote access from target system using Metasploit Framework
 
 ## Detection & Analysis
